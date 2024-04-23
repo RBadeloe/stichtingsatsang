@@ -3,11 +3,11 @@
   const events = data?.allEvents || [];
 </script>
 
-<nav>why so many necklace?</nav>
+<nav>Lorem ipsum dolor sit amet </nav>
 
 <main>
   <header>
-    <h1>faka g</h1>
+    <h1>lolrem</h1>
   </header>
 
   <section class="info">
@@ -71,6 +71,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: #FDFDFD;
+
   }
   nav {
     background-color: orange;
@@ -100,6 +102,7 @@
     margin: auto;
     padding: 1em;
     overflow: scroll;
+    overflow-x: hidden;
   }
   .event-card {
     display: flex;
