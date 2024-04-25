@@ -14,6 +14,11 @@ export async function load({}) {
           toegang
           soort
         }
+        homepage {
+          introTekst
+          ramayanSatsang
+          hindiLes
+        }
       }
     `
   })

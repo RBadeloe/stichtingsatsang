@@ -1,21 +1,23 @@
 <script>
   export let data;
   const events = data?.allEvents || [];
+  const tekst = data.homepage
 </script>
 
 <nav>Lorem ipsum dolor sit amet </nav>
 
 <main>
   <header>
-    <h1>lolrem</h1>
+    <img src="../assets/Satsang-header.jpg" alt="">
+    {@html tekst.introTekst}
   </header>
 
   <section class="info">
     <article>
-      <h2>Hindi les</h2>
+      {@html tekst.ramayanSatsang}
     </article>
     <article>
-      <h2>Ramayan Satsang</h2>
+      {@html tekst.hindiLes}
     </article>
   </section>
 
@@ -51,14 +53,17 @@
     </p>
     <section class="footer-links">
       <a href="https://www.instagram.com/stichtingsatsangnederland/"
-        >Instagram</a
+        ><img src="../assets/instagram.svg" alt=""></a
       >
-      <a href="mailto:satsangned@gmail.com">Email</a>
+      <a href="mailto:satsangned@gmail.com"><img src="../assets/mail.svg" alt=""></a>
     </section>
   </section>
 </footer>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
   *,
   *::before,
   *::after {
@@ -72,6 +77,7 @@
     margin: 0;
     padding: 0;
     background-color: #FDFDFD;
+    font-family: "Baloo 2", sans-serif;
 
   }
   nav {
@@ -85,21 +91,37 @@
     height: 30em;
   }
   .info {
-    background-color: crimson;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: max-width;
     height: 30em;
+  }
+
+  .info > article{
+    border: 3px solid #F08B67;
+    border-radius: 8px;
+    width: 30%;
+    height: 25em;
+    margin: auto;
+    padding: 1em;
   }
 
   .events {
     width: 100%;
     height: fit-content;
   }
+  .events > h1{
+    margin: 1em 10em;
+    font-size: 2.5vw;
+  }
   .event-body {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 40em;
     margin: auto;
+    margin-bottom: 6em;
     padding: 1em;
     overflow: scroll;
     overflow-x: hidden;
@@ -110,14 +132,14 @@
     margin: 1em;
     padding: 1em;
     gap: 2em;
-    width: 80%;
-    height: 12em;
+    width: 90%;
+    height: 15em;
   }
   .event-date {
     padding: 1em;
     border-radius: 8px;
     width: 30%;
-    height: 10em;
+    height: 12em;
   }
   .event-date > h2 {
     width: 100%;
@@ -129,16 +151,19 @@
     word-break: break-word;
   }
   .event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5em;
     width: 80%;
-    height: 10em;
+    height: 12em;
     border: 1px solid #000;
     border-radius: 8px;
     word-wrap: break-word;
-    white-space: pre-wrap;
+    white-space: inherit;
     word-break: break-word;
   }
 .event-info-btm > p{
-    background-color: blue;
     width: 50%;
     height: 3.5em;
 }
@@ -178,7 +203,10 @@
   }
   .footer-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 10em;
+    justify-content: space-evenly;
+
   }
   footer {
     display: flex;
