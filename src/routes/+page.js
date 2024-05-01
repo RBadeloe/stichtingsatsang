@@ -22,7 +22,7 @@ export async function load({}) {
       }
     `
   })
-console.log(responseData)
+
   return responseData.data;
   
 }
