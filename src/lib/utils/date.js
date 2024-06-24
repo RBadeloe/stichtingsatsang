@@ -4,8 +4,12 @@ export function formatDate(dateString) {
 
     var date = new Date(dateStr);
     var newDate = new Intl.DateTimeFormat('nl-NL', {
-        dateStyle: 'full',
-        timeStyle: 'short',
+        weekday: 'short' ,
+        year: 'numeric',
+        month: 'short' ,
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
         timeZone: 'Europe/Amsterdam'
     }).format(date);
 
