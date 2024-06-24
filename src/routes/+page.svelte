@@ -123,16 +123,34 @@
     display: flex;
     align-items: stretch;
     justify-content: space-around;
+   
+    background-image: url(../assets/background-info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .info > article {
     border: 3px solid #f08b67;
+    background-color:#fdfdfd5b ;
     border-radius: 8px;
     width: 30%;
     margin: 0 0.5em;
     padding: 0.5em;
     min-height: 100%;
+
   }
+
+  .info > article::after { 
+        content: ""; 
+        position: absolute; 
+        inset: -.625em; 
+        background: linear-gradient(to bottom right,  
+            rgb(255, 0, 0), rgb(255, 213, 0)); 
+        filter: blur(2.5em); 
+        border-radius: 50%; 
+        z-index: -1; 
+    } 
 
   .events {
     width: 100%;
