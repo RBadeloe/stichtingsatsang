@@ -20,6 +20,9 @@
     <article>
       {@html tekst.hindiLes}
     </article>
+    <article>
+      {@html tekst.seminar}
+    </article>
   </section>
 
   <section class="events">
@@ -117,16 +120,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
-    height: 30em;
+    margin: auto;
+    width: 90%;
+    height: fit-content;
   }
 
   .info > article {
     border: 3px solid #f08b67;
     border-radius: 8px;
     width: 30%;
-    height: 25em;
-    margin: auto;
+    height: fit-content;
+    margin: 0 auto auto auto ;
     padding: 1em;
   }
 
@@ -249,14 +253,14 @@
       flex-direction: column;
       justify-content: space-evenly;
       width: 100%;
-      height: 30em;
+      height: fit-content;
     }
 
     .info > article {
     border: 3px solid #f08b67;
     border-radius: 8px;
     width: 80%;
-    height: 25em;
+    height: fit-content;
     margin: 2em auto;
     padding: 1em;
   }

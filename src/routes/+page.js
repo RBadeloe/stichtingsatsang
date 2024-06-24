@@ -18,6 +18,7 @@ export async function load({}) {
           introTekst
           ramayanSatsang
           hindiLes
+          seminar
         }
       }
     `
