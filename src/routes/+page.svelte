@@ -1,5 +1,5 @@
 <script>
-   import { formatDate } from "$lib/utils/date.js";
+  import { formatDate } from "$lib/utils/date.js";
   export let data;
   const events = data?.allEvents || [];
   const tekst = data.homepage;
@@ -31,7 +31,7 @@
       {#each events as event}
         <article class="event-card">
           <div class="event-date" style="background-color: #{event.soort};">
-            <h2> {formatDate(event.datum)}</h2>
+            <h2>{formatDate(event.datum)}</h2>
           </div>
 
           <div class="event-info" style="border: 3px solid #{event.soort};">
@@ -119,19 +119,19 @@
   .info {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 90%;
-    height: fit-content;
+    padding: 1em;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
   }
 
   .info > article {
     border: 3px solid #f08b67;
     border-radius: 8px;
     width: 30%;
-    height: fit-content;
-    margin: 0 auto auto auto ;
-    padding: 1em;
+    margin: 0 0.5em;
+    padding: 0.5em;
+    min-height: 100%;
   }
 
   .events {
@@ -257,49 +257,49 @@
     }
 
     .info > article {
-    border: 3px solid #f08b67;
-    border-radius: 8px;
-    width: 80%;
-    height: fit-content;
-    margin: 2em auto;
-    padding: 1em;
-  }
-.events > h1{
-  margin: 24vh 13vh auto;
-  text-align: left;
+      border: 3px solid #f08b67;
+      border-radius: 8px;
+      width: 80%;
+      height: fit-content;
+      margin: 2em auto;
+      padding: 1em;
+    }
+    .events > h1 {
+      margin: 24vh 13vh auto;
+      text-align: left;
       width: 90%;
       height: 5vw;
-    font-size: 2.5em;
-}
+      font-size: 2.5em;
+    }
 
-.event-body{
-  width: 90%;
-}
+    .event-body {
+      width: 90%;
+    }
 
-.event-card{
-  flex-direction: column;
-  height: 30em;
-}
+    .event-card {
+      flex-direction: column;
+      height: 30em;
+    }
 
-.event-date{
-  width: 100%;
-  height: 6em;
-  padding: 0.5em;
-}
+    .event-date {
+      width: 100%;
+      height: 6em;
+      padding: 0.5em;
+    }
 
-.event-info{
-  width: 100%;
-  height: 24em;
-}
+    .event-info {
+      width: 100%;
+      height: 24em;
+    }
 
-.event-info-btm > p {
-    width: 80%;
-    height: 3.5em;
-  }
-  .event-info-btm {
-    display: flex;
-    flex-direction: column;
-  }
+    .event-info-btm > p {
+      width: 80%;
+      height: 3.5em;
+    }
+    .event-info-btm {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   @media only screen and (min-width: 700px),
