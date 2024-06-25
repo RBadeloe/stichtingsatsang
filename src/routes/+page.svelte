@@ -119,11 +119,10 @@
   .info {
     display: flex;
     flex-direction: row;
-    padding: 1em;
+    padding: 5em;
     display: flex;
     align-items: stretch;
     justify-content: space-around;
-   
     background-image: url(../assets/background-info.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -132,7 +131,7 @@
 
   .info > article {
     border: 3px solid #f08b67;
-    background-color:#fdfdfd5b ;
+    background-color:#fdfdfdbb ;
     border-radius: 8px;
     width: 30%;
     margin: 0 0.5em;
@@ -140,17 +139,6 @@
     min-height: 100%;
 
   }
-
-  .info > article::after { 
-        content: ""; 
-        position: absolute; 
-        inset: -.625em; 
-        background: linear-gradient(to bottom right,  
-            rgb(255, 0, 0), rgb(255, 213, 0)); 
-        filter: blur(2.5em); 
-        border-radius: 50%; 
-        z-index: -1; 
-    } 
 
   .events {
     width: 100%;
@@ -164,7 +152,7 @@
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 40em;
+    height: 45em;
     margin: auto;
     margin-bottom: 6em;
     padding: 1em;
@@ -178,13 +166,13 @@
     padding: 1em;
     gap: 2em;
     width: 90%;
-    height: 15em;
+    height: 18em;
   }
   .event-date {
     padding: 1em;
     border-radius: 8px;
     width: 30%;
-    height: 12em;
+    height: initial;
   }
   .event-date > h2 {
     width: 100%;
@@ -198,23 +186,25 @@
   .event-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0.5em;
+    justify-content: space-between;
     width: 80%;
-    height: 12em;
+    height: fit-content;
+    padding: 1em;
+    min-height: 100%;
     border: 1px solid #000;
     border-radius: 8px;
     word-wrap: break-word;
-    white-space: inherit;
-    word-break: break-word;
+    /* white-space: inherit; */
+    /* word-break: break-word; */
   }
   .event-info-btm > p {
     width: 50%;
-    height: 3.5em;
+    height: 5em;
   }
   .event-info-btm {
     display: flex;
     flex-direction: row;
+    width: 102%;
   }
   footer > img {
     object-fit: cover;
@@ -264,7 +254,7 @@
     .header-text {
       margin: 4vw auto;
       width: 90%;
-      height: 30em;
+      height: fit-content;
     }
     .info {
       display: flex;
@@ -292,11 +282,12 @@
 
     .event-body {
       width: 90%;
+      height: fit-content;
     }
 
     .event-card {
       flex-direction: column;
-      height: 30em;
+      height: fit-content;
     }
 
     .event-date {
@@ -307,7 +298,9 @@
 
     .event-info {
       width: 100%;
-      height: 24em;
+      height: fit-content;
+    padding: 0.5em;
+    min-height: 100%
     }
 
     .event-info-btm > p {
@@ -317,6 +310,7 @@
     .event-info-btm {
       display: flex;
       flex-direction: column;
+      height: fit-content;
     }
   }
 
