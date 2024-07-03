@@ -53,7 +53,7 @@
   <section class="footer-info">
     <p>
       NL ABNB 028393739e38u3<br />
-      KVK: 75495763
+      KVK: 88145174
     </p>
     <section class="footer-links">
       <a href="https://www.instagram.com/stichtingsatsangnederland/"
