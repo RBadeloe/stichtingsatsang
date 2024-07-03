@@ -4,7 +4,7 @@ export async function load({}) {
   // retrieve the articles to show on the homepage
   const responseData = await performGraphqlQuery({
     query: `
-    {
+      {
         allEvents(filter: {datum: {}}, orderBy: datum_ASC) {
           id
           titel
