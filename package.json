@@ -19,6 +19,6 @@
 		"@datocms/cli": "^2.0.2",
 		"@datocms/svelte": "^2.0.2",
 		"gsap": "^3.12.5",
-		"vercel": "^34.2.0"
+		"vercel": "^32.3.0"
 	}
 }

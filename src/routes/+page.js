@@ -1,6 +1,6 @@
 export const prerender = true;
 import { performGraphqlQuery } from '$lib/utils/query.js'
-export async function load({}) {
+export async function load({ }) {
   // retrieve the articles to show on the homepage
   const responseData = await performGraphqlQuery({
     query: `
@@ -16,14 +16,14 @@ export async function load({}) {
         }
         homepage {
           introTekst
-          ramayanSatsang
-          hindiLes
-          seminar
+         hindiLes
+          seminars
+        ramayanSatsang
         }
       }
     `
   })
-
+  console.log(responseData.data)
   return responseData.data;
-  
+
 }
