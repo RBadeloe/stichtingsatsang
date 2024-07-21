@@ -52,7 +52,7 @@
   <img src="../assets/Satsang_footer.jpg" alt="" />
   <section class="footer-info">
     <p>
-      NL ABNB 028393739e38u3<br />
+      NL69 ABNA 0118 7452 63<br />
       KVK: 88145174
     </p>
     <section class="footer-links">
