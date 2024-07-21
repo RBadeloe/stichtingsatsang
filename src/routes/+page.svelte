@@ -53,16 +53,16 @@
   <section class="footer-info">
     <p>
       NL69 ABNA 0118 7452 63<br />
-      KVK: 88145174
+      KVK: 88145174 <br />
       TEL: +31647070470
     </p>
     <section class="footer-links">
       <a href="https://www.instagram.com/stichtingsatsangnederland/"
         ><img src="../assets/instagram.svg" alt="" /></a
       >
-      <a href="https://facebook.com/stichtingsatsangnederland/"
-        ><img src="../assets/instagram.svg" alt="" /></a
-      >
+      <!-- <a href="https://facebook.com/stichtingsatsangnederland/"
+        ><img src="../assets/facebook.svg" alt="" /></a
+      > -->
       <a href="mailto:satsangned@gmail.com"
         ><img src="../assets/mail.svg" alt="" /></a
       >
