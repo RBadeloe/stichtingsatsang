@@ -61,7 +61,7 @@
         ><img src="../assets/instagram.svg" alt="" /></a
       >
       <a href="https://facebook.com/stichtingsatsangnederland/"
-        ><img src="../assets/facebook.svg" alt="" /></a
+        ><img src="../assets/instagram.svg" alt="" /></a
       >
       <a href="mailto:satsangned@gmail.com"
         ><img src="../assets/mail.svg" alt="" /></a
