@@ -20,5 +20,9 @@
 		"@datocms/svelte": "^2.0.2",
 		"gsap": "^3.12.5",
 		"vercel": "^32.3.0"
-	}
+	},
+  "engines": {
+    "node": "22.x"
+  }
+
 }
