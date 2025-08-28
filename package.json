@@ -18,11 +18,12 @@
 	"dependencies": {
 		"@datocms/cli": "^2.0.2",
 		"@datocms/svelte": "^2.0.2",
+		"@sveltejs/adapter-vercel": "^5.10.2",
 		"gsap": "^3.12.5",
+		"node": "^24.7.0",
 		"vercel": "^32.3.0"
 	},
-  "engines": {
-    "node": "22.x"
-  }
-
+	"engines": {
+		"node": "22.x"
+	}
 }
